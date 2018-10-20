@@ -4,7 +4,7 @@ E	D	C	B	A
 D	C	B	A	B
 C	B	A	C	C
 B	A	D	D	D
-A   E	E	E	E
+A   	E	E	E	E
 */
 function bubblesort(array &$array) {
 	$count = count($array);
