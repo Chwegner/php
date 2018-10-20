@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Zinsrechner</title>
+
+<style>
+body {
+	font-family: arial,sans-serif;
+}
+
+h1{
+	font-size: 35px;
+	color:green;
+}
+
+#headline{
+	margin: 0 auto;
+	margin-top: 10px;
+	padding:5px;
+	width: 500px;
+	height: auto;
+	text-aligen:center;
+}
+
+#formular{
+	margin: 0 auto;
+	margin-top: 10px;
+	padding:30px;
+	width: 500px;
+	height: 250px;
+	border:1px solid green;
+}
+
+</style>
+
+</head>
+
+<body>
+	
+<div id="headline">
+
+	<h1>Zinsrechner</h1>
+	
+	<p>In Abhängikeit Ihrer gewählten Laufzeit erhalten Sie folgende Zinssätze:</p>
+	
+	<p>Unter 3 Jahren Laufzeit 3%</p>
+	<p>Bis zu 5 Jahren Laufzeit 4%</p>
+	<p>Bis zu 10 Jahren Laufzeit 5%</p>
+	<p>Über 10 Jahren Laufzeit 6%</p>
+
+</div>
+
+<div id="formular">
+
+<form action="zinsrechner.php" method="post">
+	
+	<p>Gewünschte Laufzeit in Jahren</p>
+	<input type="number" name="jahre" min="1" step="1" value="1">
+	
+	<br /><br />
+	
+	<p>Einlage in &euro;</p>
+	<input type="number" name="betrag" min="1" step="0.01" value="1">
+	
+	<br /><br />
+	
+	<input type="submit" value="Berechnen">
+
+</form>
+
+</div>
+
+<br />
+
+</body>
+
+</html>
